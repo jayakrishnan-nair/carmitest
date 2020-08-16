@@ -18,7 +18,5 @@ steps:
 - script: |
     npm install
     npm run build
+    workingDirectory: '$(Build.SourcesDirectory)/projectFolderName
   displayName: 'npm install and build'
-- task: UseNode@1
-  inputs:
-    checkLatest: true
