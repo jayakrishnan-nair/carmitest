@@ -17,6 +17,6 @@ steps:
 
 - script: |
     npm install
-    npm run build
     workingDirectory: '$(Build.SourcesDirectory)/carmitest
+    npm run build
   displayName: 'npm install and build'
